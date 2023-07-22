@@ -1,0 +1,88 @@
+{ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"uniIdRouter": {},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "酷文",
+		"navigationBarBackgroundColor": "#31c27c",
+		"backgroundColor": "#fff"
+	},
+	"pages": [
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/news/list",
+			"style": {
+				"navigationBarTitleText": "新闻"
+			}
+		},
+        {
+            "path" : "pages/article/list",
+            "style" : {
+                "navigationBarTitleText": "文章"
+            }
+        },
+        {
+            "path" : "pages/user/user",
+            "style" : {
+                "navigationBarTitleText": "浏览历史"
+            }
+        },
+        {
+            "path" : "pages/news/detail",
+            "style" : {
+                "navigationBarTitleText": "详情"
+            }
+        },
+        {
+            "path" : "pages/article/detail",
+            "style" : {
+                "navigationBarTitleText": "详情"
+            }
+        },
+        {
+            "path" : "pages/cats/cats",
+            "style" : {
+                "navigationBarTitleText": "猫猫"
+            }
+
+        },
+	    {
+            "path" : "pages/learn/learn",
+            "style" : {
+                "navigationBarTitleText": "学习"
+            }
+        },
+        {
+            "path" : "pages/regist/regist",
+            "style" : {
+                "navigationBarTitleText": "注册"
+            }
+
+        }
+    ],
+    "tabBar": {
+        "color": "#333", // 字体颜色
+        "selectedColor": "#015ff9", // 选中的颜色
+        "list": [ // 最少两个, 最多5个
+            {
+                "text": "新闻",
+                "pagePath": "pages/news/list",
+                "iconPath": "static/tabs/tab_mountain.svg",
+                "selectedIconPath": "static/tabs/tab_in_mountain.svg"
+            },
+            {
+                "text": "文章",
+                "pagePath": "pages/article/list",
+                "iconPath": "static/tabs/tab_news.svg",
+                "selectedIconPath": "static/tabs/tab_in_news.svg"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/user/user",
+                "iconPath": "static/tabs/tab_mine.svg",
+                "selectedIconPath": "static/tabs/tab_in_mine.svg"
+            }
+        ]
+    }
+}
